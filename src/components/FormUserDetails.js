@@ -14,7 +14,7 @@ export class FormUserDetails extends Component {
         
 
         return (
-            <MuiThemeProvider muiTheme={getMuiTheme()}>
+            <MuiThemeProvider>
                 <React.Fragment>
                     <AppBar title="Enter User Details" />
                     <TextField 
