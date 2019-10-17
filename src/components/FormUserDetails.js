@@ -41,7 +41,7 @@ export class FormUserDetails extends Component {
                     <Button
                         label="Continue"
                         primary={true}
-                        style={styles.button}
+                        //style={styles.button}
                         onClick={this.continue}
                     />
                 </React.Fragment>
