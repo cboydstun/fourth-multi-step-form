@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
 import { UserForm } from './components/UserForm';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 
 
 class App extends Component {
