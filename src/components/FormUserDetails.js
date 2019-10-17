@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import { AppBar, TextField, Button } from '@material-ui/core';
 
 export class FormUserDetails extends Component {
@@ -14,7 +14,7 @@ export class FormUserDetails extends Component {
         
 
         return (
-            <ThemeProvider>
+            <MuiThemeProvider>
                 <React.Fragment>
                     <AppBar title="Enter User Details" />
                     <TextField 
@@ -46,7 +46,7 @@ export class FormUserDetails extends Component {
                     />
                 </React.Fragment>
 
-            </ThemeProvider>
+            </MuiThemeProvider>
         )
     }
 }
