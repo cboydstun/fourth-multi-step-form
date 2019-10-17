@@ -15,7 +15,7 @@ export class FormUserDetails extends Component {
 
         return (
             // <MuiThemeProvider>
-                <React.Fragment>
+                // <React.Fragment>
                     <AppBar title="Enter User Details" />
                     <TextField 
                         hintText="Enter Your First Name"
@@ -44,7 +44,7 @@ export class FormUserDetails extends Component {
                         //style={styles.button}
                         onClick={this.continue}
                     />
-                </React.Fragment>
+                // </React.Fragment>
 
             // </MuiThemeProvider>
         )
