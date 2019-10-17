@@ -15,7 +15,7 @@ export class FormUserDetails extends Component {
 
         return (
             <div>
-              <Button variant="outlined" color="primary">
+              <Button variant="outlined" color="primary"> Button
               </Button> <br />
               <TextField
                 placeholder="Placeholder here"
@@ -23,22 +23,22 @@ export class FormUserDetails extends Component {
                 
                 <AppBar title="Enter User Details" />
                 <TextField 
-                hintText="Enter Your First Name"
-                floatingLabelText="First Name"
-                onChange={handleChange('firstName')}
-                defaultValue={values.firstName}
+                    placeholder="Enter Your First Name"
+                    label="First Name"
+                    onChange={handleChange('firstName')}
+                    defaultValue={values.firstName}
                 />
                 <br />
                 <TextField 
-                    hintText="Enter Your Last Name"
-                    floatingLabelText="Last Name"
+                    placeholder="Enter Your Last Name"
+                    label="Last Name"
                     onChange={handleChange('lastName')}
                     defaultValue={values.lastName}
                 />
                 <br />
                 <TextField 
-                    hintText="Enter Your Email"
-                    floatingLabelText="Email"
+                    placeholder="Enter Your Email"
+                    label="Email"
                     onChange={handleChange('email')}
                     defaultValue={values.email}
                 />
