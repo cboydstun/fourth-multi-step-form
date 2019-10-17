@@ -15,12 +15,6 @@ export class FormUserDetails extends Component {
 
         return (
             <div>
-              <Button variant="outlined" color="primary"> Button
-              </Button> <br />
-              <TextField
-                placeholder="Placeholder here"
-                label="Basic TextField" />
-                
                 <AppBar title="Enter User Details" />
                 <TextField 
                     placeholder="Enter Your First Name"
@@ -43,12 +37,14 @@ export class FormUserDetails extends Component {
                     defaultValue={values.email}
                 />
                 <br />
-                <Button
+                <Button 
                     label="Continue"
-                    primary={true}
+                    variant="outlined"
+                    color="primary"
                     //style={styles.button}
-                    onClick={this.continue}
-                />
+                    onClick={this.continue}>
+                    Continue
+                </Button>
             </div>
           );
         
