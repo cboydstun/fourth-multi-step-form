@@ -51,10 +51,10 @@ export class FormUserDetails extends Component {
     }
 }
 
-const styles = {
-    button: {
-        margin: 15
-    }
-}
+// const styles = {
+//     button: {
+//         margin: 15
+//     }
+// }
 
 export default FormUserDetails;
