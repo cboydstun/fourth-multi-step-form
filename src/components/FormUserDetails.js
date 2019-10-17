@@ -15,37 +15,35 @@ export class FormUserDetails extends Component {
 
         return (
             <MuiThemeProvider muiTheme={getMuiTheme()}>
-                <div>
-                    <React.Fragment>
-                        <AppBar title="Enter User Details" />
-                        <TextField 
-                            hintText="Enter Your First Name"
-                            floatingLabelText="First Name"
-                            onChange={handleChange('firstName')}
-                            defaultValue={values.firstName}
-                        />
-                        <br />
-                        <TextField 
-                            hintText="Enter Your Last Name"
-                            floatingLabelText="Last Name"
-                            onChange={handleChange('lastName')}
-                            defaultValue={values.lastName}
-                        />
-                        <br />
-                        <TextField 
-                            hintText="Enter Your Email"
-                            floatingLabelText="Email"
-                            onChange={handleChange('email')}
-                            defaultValue={values.email}
-                        />
-                        <br />
-                        <Button
-                            label="Continue"
-                            primary={true}
-                            style={styles.button}
-                            onClick={this.continue}
-                        />
-                    </div>
+                <React.Fragment>
+                    <AppBar title="Enter User Details" />
+                    <TextField 
+                        hintText="Enter Your First Name"
+                        floatingLabelText="First Name"
+                        onChange={handleChange('firstName')}
+                        defaultValue={values.firstName}
+                    />
+                    <br />
+                    <TextField 
+                        hintText="Enter Your Last Name"
+                        floatingLabelText="Last Name"
+                        onChange={handleChange('lastName')}
+                        defaultValue={values.lastName}
+                    />
+                    <br />
+                    <TextField 
+                        hintText="Enter Your Email"
+                        floatingLabelText="Email"
+                        onChange={handleChange('email')}
+                        defaultValue={values.email}
+                    />
+                    <br />
+                    <Button
+                        label="Continue"
+                        primary={true}
+                        style={styles.button}
+                        onClick={this.continue}
+                    />
                 </React.Fragment>
 
             </MuiThemeProvider>
