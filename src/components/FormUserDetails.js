@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { MuiThemeProvider } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import { AppBar, TextField, Button } from '@material-ui/core';
 
 export class FormUserDetails extends Component {
@@ -10,44 +10,57 @@ export class FormUserDetails extends Component {
 
 
     render () {
+
         const { values, handleChange } = this.props;
-        
 
         return (
-            // <MuiThemeProvider>
-                <div>
-                    <AppBar title="Enter User Details" />
-                    <TextField 
-                        hintText="Enter Your First Name"
-                        floatingLabelText="First Name"
-                        onChange={handleChange('firstName')}
-                        defaultValue={values.firstName}
-                    />
-                    <br />
-                    <TextField 
-                        hintText="Enter Your Last Name"
-                        floatingLabelText="Last Name"
-                        onChange={handleChange('lastName')}
-                        defaultValue={values.lastName}
-                    />
-                    <br />
-                    <TextField 
-                        hintText="Enter Your Email"
-                        floatingLabelText="Email"
-                        onChange={handleChange('email')}
-                        defaultValue={values.email}
-                    />
-                    <br />
-                    <Button
-                        label="Continue"
-                        primary={true}
-                        //style={styles.button}
-                        onClick={this.continue}
-                    />
-                </div>
+            <div>
+              <Navbar />
+              <Button variant="outlined" color="primary">
+                <Bookmarks></Bookmarks>
+              </Button> <br />
+              <TextField
+                placeholder="Placeholder here"
+                label="Basic TextField" />
+            </div>
+          );
+        
 
-            // </MuiThemeProvider>
-        )
+        // return (
+        //     <MuiThemeProvider>
+        //         <div>
+        //             <AppBar title="Enter User Details" />
+        //             <TextField 
+        //                 hintText="Enter Your First Name"
+        //                 floatingLabelText="First Name"
+        //                 onChange={handleChange('firstName')}
+        //                 defaultValue={values.firstName}
+        //             />
+        //             <br />
+        //             <TextField 
+        //                 hintText="Enter Your Last Name"
+        //                 floatingLabelText="Last Name"
+        //                 onChange={handleChange('lastName')}
+        //                 defaultValue={values.lastName}
+        //             />
+        //             <br />
+        //             <TextField 
+        //                 hintText="Enter Your Email"
+        //                 floatingLabelText="Email"
+        //                 onChange={handleChange('email')}
+        //                 defaultValue={values.email}
+        //             />
+        //             <br />
+        //             <Button
+        //                 label="Continue"
+        //                 primary={true}
+        //                 //style={styles.button}
+        //                 onClick={this.continue}
+        //             />
+        //         </div>
+
+        //     </MuiThemeProvider>
+        // )
     }
 }
 
