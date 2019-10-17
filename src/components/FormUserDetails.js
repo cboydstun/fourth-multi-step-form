@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import { AppBar, TextField, Button, Navbar } from '@material-ui/core';
+import { AppBar, TextField, Button } from '@material-ui/core';
 
 export class FormUserDetails extends Component {
     continue = e => {
@@ -15,7 +15,6 @@ export class FormUserDetails extends Component {
 
         return (
             <div>
-              <Navbar />
               <Button variant="outlined" color="primary">
               </Button> <br />
               <TextField
