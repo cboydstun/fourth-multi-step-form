@@ -93,4 +93,4 @@ export class FormUserDetails extends Component {
 //     }
 // }
 
-export default FormUserDetails;
+export default FormUserDetails

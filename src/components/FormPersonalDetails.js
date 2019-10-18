@@ -60,5 +60,7 @@ export class FormPersonalDetails extends Component {
                 </Button>
             </div>
           );
+        }
+    }
 
-export default formPersonalDetails;
+export default FormPersonalDetails
