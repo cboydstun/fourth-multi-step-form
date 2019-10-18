@@ -43,20 +43,20 @@ export class FormPersonalDetails extends Component {
                 />
                 <br />
                 <Button 
-                    label="Continue"
-                    variant="outlined"
-                    color="primary"
-                    //style={styles.button}
-                    onClick={this.continue}>
-                    Continue
-                </Button>
-                <Button 
                     label="Back"
                     variant="outlined"
                     color="primary"
                     //style={styles.button}
                     onClick={this.back}>
                     Back
+                </Button>
+                <Button 
+                    label="Continue"
+                    variant="outlined"
+                    color="primary"
+                    //style={styles.button}
+                    onClick={this.continue}>
+                    Continue
                 </Button>
             </div>
           );
