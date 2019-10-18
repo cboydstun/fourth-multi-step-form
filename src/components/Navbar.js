@@ -7,7 +7,7 @@ const NavBar = () => {
         <div>
         <AppBar position="static">
             <Toolbar>
-                React Material UI Example
+                Multi-step Form
             </Toolbar>
         </AppBar>
         </div>
