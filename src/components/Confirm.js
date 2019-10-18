@@ -24,10 +24,13 @@ export class FormUserDetails extends Component {
             <div>
                 {/* <AppBar title="Enter User Details" /> */}
                 <List>
-                    <ListItem 
-                        primary="First Name"
-                        secondText={ firstName }
-                    />
+                    <ListItem>
+                        <ListItemText 
+                        primary="First Name"  
+                        secondary={ firstName }
+                        />
+
+                    </ListItem> 
                     <ListItem 
                         primaryText="Last Name"
                         secondText={ lastName }
