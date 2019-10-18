@@ -31,26 +31,41 @@ export class FormUserDetails extends Component {
                         />
 
                     </ListItem> 
-                    <ListItem 
-                        primaryText="Last Name"
-                        secondText={ lastName }
-                    />
-                    <ListItem 
-                        primaryText="Email"
-                        secondText={ email }
-                    />
-                    <ListItem 
-                        primaryText="Occupation"
-                        secondText={ occupation }
-                    />
-                    <ListItem 
-                        primaryText="City"
-                        secondText={ city }
-                    />
-                    <ListItem 
-                        primaryText="Bio"
-                        secondText={ bio }
-                    />
+                    <ListItem>
+                        <ListItemText 
+                        primary="Last Name"  
+                        secondary={ lastName }
+                        />
+
+                    </ListItem>
+                    <ListItem>
+                        <ListItemText 
+                        primary="Email"  
+                        secondary={ email }
+                        />
+
+                    </ListItem>
+                    <ListItem>
+                        <ListItemText 
+                        primary="Occupation"  
+                        secondary={ occupation }
+                        />
+
+                    </ListItem>
+                    <ListItem>
+                        <ListItemText 
+                        primary="City"  
+                        secondary={ city }
+                        />
+
+                    </ListItem>
+                    <ListItem>
+                        <ListItemText 
+                        primary="Bio"  
+                        secondary={ bio }
+                        />
+
+                    </ListItem>
                 </List>
                 <Button 
                     label="Back"
