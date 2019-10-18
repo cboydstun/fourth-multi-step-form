@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import { MuiThemeProvider } from '@material-ui/core/styles';
 import { AppBar, TextField, Button } from '@material-ui/core';
-import { List, ListItem } from '@material-ui/List'
+import { List, ListItem } from '@material-ui/core'
 
 export class FormUserDetails extends Component {
     continue = e => {
@@ -9,7 +9,7 @@ export class FormUserDetails extends Component {
         // PROCESS FORM //
         this.props.nextStep();
     }
-    
+
     back = e => {
         e.preventDefault();
         this.props.prevStep();
